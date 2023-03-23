@@ -1,0 +1,10 @@
+<?php
+echo "Hello";
+ if ($_attributeValue = $block->getProduct()->getData($block->getAtCode())): ?>
+    <div class="product attribute <?= /* @noEscape */ $block->getCssClass() ?>">
+        <strong class="type"><?= /* @escapeNotVerified */ $block->getAtLabel() ?>:</strong>
+        <div class="value" <?= /* @noEscape */ $block->getAddAttribute() ?>>
+            <?= /* @escapeNotVerified */ $_attributeValue ?>
+        </div>
+    </div>
+<?php endif; ?>

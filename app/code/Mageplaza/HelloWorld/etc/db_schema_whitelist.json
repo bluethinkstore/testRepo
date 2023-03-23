@@ -1,0 +1,15 @@
+{
+    "mageplaza_declarative_schema1": {
+        "column": {
+            "table_1_id": true,
+            "Email ID": true,
+            "customer ID": true,
+            "customer email": true,
+            "customer_id": true,
+            "customer_email": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

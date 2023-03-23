@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="mageplaza_declarative_schema1" resource="default" engine="innodb" comment="Inchoo Table 1">
+        <column xsi:type="varchar" name="customer_id" comment="customer ID" unsigned="true" nullable="false" identity="true" />
+        <column xsi:type="varchar" name="customer_email" comment="customer email" />
+         <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="customer_id"/>
+        </constraint>
+    </table>
+</schema>

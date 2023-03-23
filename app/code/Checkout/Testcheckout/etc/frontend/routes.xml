@@ -1,0 +1,8 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+<router id="standard">
+    <route id="testcheckout" frontName="testcheckout">
+       <module name="Checkout_Testcheckout"/>
+    </route>
+</router>
+
+</config>
