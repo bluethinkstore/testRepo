@@ -16,7 +16,7 @@ class Data implements ObserverInterface
     {
         $product = $observer->getProduct();
         $originalName = $product->getName();
-        $modifiedName = $originalName . ' - Modified by Magento 2 Events and Observers';
+        $modifiedName = $originalName . ' - Modified by Events and Observers';
         $product->setName($modifiedName);
     }
 }

@@ -26,6 +26,8 @@ class Info extends \Magefan\Community\Block\Adminhtml\System\Config\Form\Info
      */
     protected function getModuleTitle()
     {
+        // echo"this is test";
+        // die();
         return 'Admin User Guide Extension';
     }
 }

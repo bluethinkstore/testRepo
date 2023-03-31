@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="webkul" translate="label" sortOrder="10">
+            <label>Webkul</label>
+        </tab>
+        <section id="demo" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Demo</label>
+            <tab>webkul</tab>
+            <resource>Webkul_Demo::config_demo</resource>
+            <group id="configuration" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Demo Configuration</label>
+                <field id="demo_text" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Demo Text</label>
+                </field>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Enabled</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="description" type="textarea" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                 <label>Enter description here</label>
+                 <comment>here is comment</comment>
+                 <validate>required-entry validate-length minimum-length-1 maximum-length-160</validate>
+                 <tooltip>enter a valid description</tooltip>
+                <depends><field id="pepend_id">1</field></depends>
+                </field>
+                <field id="test" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Select Product Tab</label>
+                <source_model>Webkul\Demo\Model\Config\Source\Products</source_model>                 
+                </field>
+                <field id="showmethod" translate="label" type="select" sortOrder="80" showInDefault="1" showInWebsite="0" showInStore="0">
+                  <label>Country</label>
+                    <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                </field> 
+                <field id="custom" translate="label" type="select" sortOrder="80" showInDefault="1" showInWebsite="0" showInStore="0">
+                  <label>Custom Dropdown_Country</label>
+                    <source_model>Webkul\Demo\Model\Config\Source\CountryList</source_model>
+                </field>
+                <field id="demo_image" translate="label" type="text" sortOrder="10000000" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <frontend_model>Webkul\Demo\Block\DemoImage</frontend_model>
+                </field>
+                
+            </group>
+        </section>
+    </system>
+</config>
